@@ -15,9 +15,9 @@ using System.Text;
 
 namespace Test.Proxy.Transport
 {
-    // Derived from HttpPipeLineTransport, TestProxyTransport provides a <summary>
-    //  custom implementations of the abstract methods defined in the base class
-    //  and described above in the HTTP Transport section of this article. These
+    // Derived from HttpPipeLineTransport, TestProxyTransport provides custom 
+    //  implementations of the abstract methods defined in the base class
+    //  described above in the HTTP Transport section of this article. These
     //  custom implementations allow us to intercept and reroute app traffic sent
     //  between an app and Azure to the test proxy.
     public class TestProxyTransport : HttpPipelineTransport
