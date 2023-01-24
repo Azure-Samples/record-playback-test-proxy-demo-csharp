@@ -1,0 +1,198 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://cosmos-tables-sdk-demo-001.table.cosmos.azure.com/Tables?$format=application%2Fjson%3Bodata%3Dminimalmetadata",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "application/json;odata=minimalmetadata",
+        "Authorization": "Sanitized",
+        "Content-Length": "30",
+        "Content-Type": "application/json;odata=nometadata",
+        "DataServiceVersion": "3.0",
+        "User-Agent": "azsdk-net-Data.Tables/12.6.1 (.NET 6.0.13; Microsoft Windows 10.0.22621)",
+        "x-ms-client-request-id": "78c3ca54-10b5-4387-a091-6d6fecdfff88",
+        "x-ms-date": "Tue, 24 Jan 2023 00:09:56 GMT",
+        "x-ms-return-client-request-id": "true",
+        "x-ms-version": "2020-12-06"
+      },
+      "RequestBody": {
+        "TableName": "adventureworks"
+      },
+      "StatusCode": 201,
+      "ResponseHeaders": {
+        "Content-Type": "application/json; odata=minimalmetadata",
+        "Date": "Tue, 24 Jan 2023 00:09:56 GMT",
+        "ETag": "W/\u0022datetime\u00272023-01-24T00%3A09%3A56.8873479Z\u0027\u0022",
+        "Location": "https://cosmos-tables-sdk-demo-001.table.cosmos.azure.com/Tables(\u0027adventureworks\u0027)",
+        "Transfer-Encoding": "chunked"
+      },
+      "ResponseBody": {
+        "TableName": "adventureworks",
+        "odata.metadata": "https://cosmos-tables-sdk-demo-001.table.cosmos.azure.com/$metadata#Tables/@Element"
+      }
+    },
+    {
+      "RequestUri": "https://cosmos-tables-sdk-demo-001.table.cosmos.azure.com/adventureworks?$format=application%2Fjson%3Bodata%3Dminimalmetadata",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "application/json;odata=minimalmetadata",
+        "Authorization": "Sanitized",
+        "Content-Length": "112",
+        "Content-Type": "application/json;odata=nometadata",
+        "DataServiceVersion": "3.0",
+        "Prefer": "return-no-content",
+        "User-Agent": "azsdk-net-Data.Tables/12.6.1 (.NET 6.0.13; Microsoft Windows 10.0.22621)",
+        "x-ms-client-request-id": "01496a9a-b2ed-48b7-9789-af95dadb66b3",
+        "x-ms-date": "Tue, 24 Jan 2023 00:09:57 GMT",
+        "x-ms-return-client-request-id": "true",
+        "x-ms-version": "2020-12-06"
+      },
+      "RequestBody": {
+        "RowKey": "68719518388",
+        "PartitionKey": "gear-surf-surfboards",
+        "Name": "Ocean Surfboard",
+        "Quantity": 8,
+        "Sale": true
+      },
+      "StatusCode": 204,
+      "ResponseHeaders": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 24 Jan 2023 00:09:56 GMT",
+        "ETag": "W/\u0022datetime\u00272023-01-24T00%3A09%3A57.5793671Z\u0027\u0022",
+        "Location": "https://cosmos-tables-sdk-demo-001.table.cosmos.azure.com/adventureworks(PartitionKey=\u0027gear-surf-surfboards\u0027,RowKey=\u002768719518388\u0027)",
+        "Preference-Applied": "return-no-content"
+      },
+      "ResponseBody": null
+    },
+    {
+      "RequestUri": "https://cosmos-tables-sdk-demo-001.table.cosmos.azure.com/adventureworks(PartitionKey=\u0027gear-surf-surfboards\u0027,RowKey=\u002768719518388\u0027)?$format=application%2Fjson%3Bodata%3Dminimalmetadata",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json;odata=minimalmetadata",
+        "Authorization": "Sanitized",
+        "DataServiceVersion": "3.0",
+        "User-Agent": "azsdk-net-Data.Tables/12.6.1 (.NET 6.0.13; Microsoft Windows 10.0.22621)",
+        "x-ms-client-request-id": "239670a4-94ec-4948-ada6-d318bbb89a49",
+        "x-ms-date": "Tue, 24 Jan 2023 00:09:57 GMT",
+        "x-ms-return-client-request-id": "true",
+        "x-ms-version": "2020-12-06"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Content-Type": "application/json; odata=minimalmetadata",
+        "Date": "Tue, 24 Jan 2023 00:09:56 GMT",
+        "ETag": "W/\u0022datetime\u00272023-01-24T00%3A09%3A57.5793671Z\u0027\u0022",
+        "Transfer-Encoding": "chunked"
+      },
+      "ResponseBody": {
+        "odata.metadata": "https://cosmos-tables-sdk-demo-001.table.cosmos.azure.com/adventureworks/$metadata#adventureworks/@Element",
+        "odata.etag": "W/\u0022datetime\u00272023-01-24T00%3A09%3A57.5793671Z\u0027\u0022",
+        "RowKey": "68719518388",
+        "PartitionKey": "gear-surf-surfboards",
+        "Name": "Ocean Surfboard",
+        "Quantity": 8,
+        "Sale": true,
+        "Timestamp": "2023-01-24T00:09:57.5793671Z"
+      }
+    },
+    {
+      "RequestUri": "https://cosmos-tables-sdk-demo-001.table.cosmos.azure.com/adventureworks?$format=application%2Fjson%3Bodata%3Dminimalmetadata",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "application/json;odata=minimalmetadata",
+        "Authorization": "Sanitized",
+        "Content-Length": "112",
+        "Content-Type": "application/json;odata=nometadata",
+        "DataServiceVersion": "3.0",
+        "Prefer": "return-no-content",
+        "User-Agent": "azsdk-net-Data.Tables/12.6.1 (.NET 6.0.13; Microsoft Windows 10.0.22621)",
+        "x-ms-client-request-id": "93b99d06-286d-4eed-9cec-ddee152a3e18",
+        "x-ms-date": "Tue, 24 Jan 2023 00:09:58 GMT",
+        "x-ms-return-client-request-id": "true",
+        "x-ms-version": "2020-12-06"
+      },
+      "RequestBody": {
+        "RowKey": "68719518390",
+        "PartitionKey": "gear-surf-surfboards",
+        "Name": "Sand Surfboard",
+        "Quantity": 5,
+        "Sale": false
+      },
+      "StatusCode": 204,
+      "ResponseHeaders": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 24 Jan 2023 00:09:56 GMT",
+        "ETag": "W/\u0022datetime\u00272023-01-24T00%3A09%3A57.8327047Z\u0027\u0022",
+        "Location": "https://cosmos-tables-sdk-demo-001.table.cosmos.azure.com/adventureworks(PartitionKey=\u0027gear-surf-surfboards\u0027,RowKey=\u002768719518390\u0027)",
+        "Preference-Applied": "return-no-content"
+      },
+      "ResponseBody": null
+    },
+    {
+      "RequestUri": "https://cosmos-tables-sdk-demo-001.table.cosmos.azure.com/adventureworks()?$format=application%2Fjson%3Bodata%3Dminimalmetadata\u0026$filter=PartitionKey%20eq%20%27gear-surf-surfboards%27",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json;odata=minimalmetadata",
+        "Authorization": "Sanitized",
+        "DataServiceVersion": "3.0",
+        "User-Agent": "azsdk-net-Data.Tables/12.6.1 (.NET 6.0.13; Microsoft Windows 10.0.22621)",
+        "x-ms-client-request-id": "dc85b31e-7fb7-4004-ae8e-34d1861f89ad",
+        "x-ms-date": "Tue, 24 Jan 2023 00:09:58 GMT",
+        "x-ms-return-client-request-id": "true",
+        "x-ms-version": "2020-12-06"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Content-Type": "application/json; odata=minimalmetadata",
+        "Date": "Tue, 24 Jan 2023 00:09:57 GMT",
+        "Transfer-Encoding": "chunked"
+      },
+      "ResponseBody": {
+        "value": [
+          {
+            "odata.etag": "W/\u0022datetime\u00272023-01-24T00%3A09%3A57.5793671Z\u0027\u0022",
+            "RowKey": "68719518388",
+            "PartitionKey": "gear-surf-surfboards",
+            "Name": "Ocean Surfboard",
+            "Quantity": 8,
+            "Sale": true,
+            "Timestamp": "2023-01-24T00:09:57.5793671Z"
+          },
+          {
+            "odata.etag": "W/\u0022datetime\u00272023-01-24T00%3A09%3A57.8327047Z\u0027\u0022",
+            "RowKey": "68719518390",
+            "PartitionKey": "gear-surf-surfboards",
+            "Name": "Sand Surfboard",
+            "Quantity": 5,
+            "Sale": false,
+            "Timestamp": "2023-01-24T00:09:57.8327047Z"
+          }
+        ],
+        "odata.metadata": "https://cosmos-tables-sdk-demo-001.table.cosmos.azure.com/$metadata#adventureworks"
+      }
+    },
+    {
+      "RequestUri": "https://cosmos-tables-sdk-demo-001.table.cosmos.azure.com/Tables(\u0027adventureworks\u0027)",
+      "RequestMethod": "DELETE",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Authorization": "Sanitized",
+        "User-Agent": "azsdk-net-Data.Tables/12.6.1 (.NET 6.0.13; Microsoft Windows 10.0.22621)",
+        "x-ms-client-request-id": "62417fee-4270-4cf8-878b-9ed36b3c73c9",
+        "x-ms-date": "Tue, 24 Jan 2023 00:09:58 GMT",
+        "x-ms-return-client-request-id": "true",
+        "x-ms-version": "2020-12-06"
+      },
+      "RequestBody": null,
+      "StatusCode": 204,
+      "ResponseHeaders": {
+        "Content-Type": "application/json",
+        "Date": "Tue, 24 Jan 2023 00:09:57 GMT"
+      },
+      "ResponseBody": null
+    }
+  ],
+  "Variables": {}
+}
