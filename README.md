@@ -16,12 +16,13 @@ You must have the test proxy installed and running before starting the test.
 
 To install the proxy:
 
-`Install .NET 5.0 or higher
+[Install .NET 5.0 or higher](https://dotnet.microsoft.com/download)
 
 Install the test-proxy:
 
+```
 dotnet tool update azure.sdk.tools.testproxy \--global \--add-source https://pkgs.dev.azure.com/azure-sdk/public/\_packaging/azure-sdk-for-net/nuget/v3/index.json \--version \"1.0.0-dev\*\"
-`
+```
 After installing the tool, run it in a terminal or cmd window by typing the command 'test-proxy'. 
 The included recording file is provided for illustration purposes only,
 it can't be used to play back the test since the resources associated
