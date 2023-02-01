@@ -1,6 +1,5 @@
-Software testing is a crucial step in the software development process,
-and testing software on cloud services like Azure can incure significant
-costs from provisioning and maintaining cloud services needed for testing.
+Testing software deployed to cloud services like Azure can incure significant
+costs from provisioning and maintaining the services needed for testing.
 
 Here at Microsoft, we've developed a lightweight test proxy that
 allows us to record app interactions with Azure and play them back on
