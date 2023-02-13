@@ -37,9 +37,8 @@ The included recording file is provided for illustration purposes only,
 it can't be used to play back the test since the resources associated
 with it no longer exist in Azure.
 
-This project is intended to be a demo that goes with the following Azure
-SDK blog post:
-<blog post link TBD>
+This project is intended to be a demo that goes with the following [Azure
+SDK blog post](https://devblogs.microsoft.com/azure-sdk/level-up-your-cloud-testing-game-with-the-azure-sdk-test-proxy/)
 
 The test proxy is compatible with any language that communicates using HTTP traffic. The sole limitation is that
 To use it, you must be able to reroute your app requests to the test proxy via modifications to the request headers
